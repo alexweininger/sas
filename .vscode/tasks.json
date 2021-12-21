@@ -39,17 +39,6 @@
             "problemMatcher": "$msCompile"
         },
         {
-            "type": "shell",
-            "label": "swa start",
-            "command": "swa start ./src/sas.front --api-location ./src/sas.api",
-            "isBackground": false,
-            "problemMatcher": [],
-            "options": {
-                "cwd": "${workspaceFolder}"
-            },
-            "dependsOn": []
-        },
-        {
             "label": "clean (functions)",
             "command": "dotnet",
             "args": [
@@ -60,7 +49,7 @@
             "type": "process",
             "problemMatcher": "$msCompile",
             "options": {
-                "cwd": "${workspaceFolder}/src/sas.api"
+                "cwd": "${workspaceFolder}/sas.api"
             }
         },
         {
@@ -79,7 +68,7 @@
             },
             "problemMatcher": "$msCompile",
             "options": {
-                "cwd": "${workspaceFolder}/src/sas.api"
+                "cwd": "${workspaceFolder}/sas.api"
             }
         },
         {
@@ -95,7 +84,7 @@
             "type": "process",
             "problemMatcher": "$msCompile",
             "options": {
-                "cwd": "${workspaceFolder}/src/sas.api"
+                "cwd": "${workspaceFolder}/sas.api"
             }
         },
         {
@@ -112,14 +101,14 @@
             "dependsOn": "clean release (functions)",
             "problemMatcher": "$msCompile",
             "options": {
-                "cwd": "${workspaceFolder}/src/sas.api"
+                "cwd": "${workspaceFolder}/sas.api"
             }
         },
         {
             "type": "func",
             "dependsOn": "build (functions)",
             "options": {
-                "cwd": "${workspaceFolder}/src/sas.api/bin/Debug/net6.0"
+                "cwd": "${workspaceFolder}/sas.api/bin/Debug/net6.0"
             },
             "command": "host start",
             "isBackground": true,

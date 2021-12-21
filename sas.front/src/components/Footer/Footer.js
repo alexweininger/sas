@@ -1,4 +1,5 @@
 const Footer = () => {
+    console.log('here');
     return (
         <section className="footer-area footer-dark">
             <div className="container">
@@ -14,7 +15,7 @@ const Footer = () => {
                             <span className="mail">support@uideck.com</span>
                         </div>
                         <div className="copyright text-center mt-35">
-                            <p className="text">&copy; <span id="year">{ new Date().getFullYear() }</span> - All rights reserved</p>
+                            <p className="text">&copy; <span id="year">{new Date().getFullYear()}</span> - All rights reserved</p>
                         </div>
                     </div>
                 </div>
