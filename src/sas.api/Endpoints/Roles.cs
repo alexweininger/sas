@@ -12,7 +12,7 @@ namespace sas.api
 	public static class Roles
 	{
 		[FunctionName("RolesGET")]
-		public static async Task<IActionResult> RunAsync([HttpTrigger(AuthorizationLevel.Function, "GET", Route = "Roles")]
+		public static async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Function, "GET", Route = "Roles")]
 			HttpRequest req, ILogger log)
 		{
 			// Request body is supposed to contain the user's access token
