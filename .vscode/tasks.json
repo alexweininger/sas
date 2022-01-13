@@ -142,7 +142,6 @@
 			"dependsOn": []
 		},
 		{
-			// https://stackoverflow.com/a/60330174
 			"label": "Terminate All Tasks",
 			"command": "echo ${input:terminate}",
 			"type": "shell",
