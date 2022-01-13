@@ -117,11 +117,13 @@
 		},
 		{
 			"type": "shell",
-			"label": "Start SWA for Launch Edge",
+			"label": "Start SWA and Launch Edge",
 			// TODO: Enable SSL
 			"command": "swa start app",
-			"isBackground": false,
-			"problemMatcher": [],
+			"isBackground": true,
+			"problemMatcher": [
+				"$swa-watch"
+			],
 			"options": {
 				"cwd": "${workspaceFolder}"
 			},

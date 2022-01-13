@@ -8,7 +8,7 @@
 			"type": "pwa-msedge",
 			"url": "http://localhost:4280",
 			//"webRoot": "${workspaceFolder}",
-			"preLaunchTask": "Start SWA for Launch Edge",
+			"preLaunchTask": "Start SWA and Launch Edge",
 			"presentation": {
 				"hidden": true,
 				"group": "",
